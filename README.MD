@@ -25,7 +25,7 @@ Agentify is an intelligent orchestration platform designed to manage and coordin
 To get started with Agentify, follow these steps:
 
 ```bash
-git clone https://github.com/yourusername/agentify.git
+git clone https://github.com/corzed/agentify.git
 cd agentify
 pip install -r requirements.txt
 cp .env.example .env
