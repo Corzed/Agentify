@@ -1,8 +1,8 @@
-# Agentify 🤖
+#Agentify 🤖
 
 Agentify is an intelligent orchestration platform designed to manage and coordinate multiple AI agents. It leverages OpenAI's GPT model to facilitate seamless interaction between agents and their tools, offering a dynamic environment for complex task execution.
 
-## Table of Contents
+##Table of Contents
 
 - [Features](#features)
 - [Installation](#installation)
