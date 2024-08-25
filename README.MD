@@ -127,8 +127,6 @@ Contributions are welcome! Please follow these steps:
 5. Push to the branch (`git push origin feature-branch`).
 6. Open a pull request.
 
-Please make sure to update tests as appropriate.
-
 ## License 📄
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
