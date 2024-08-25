@@ -114,7 +114,7 @@ Agents can be added in real time on the website, or added/modified by updating t
 
 Once the agents are created and active, you can visualize the network of agents, orchestrators, and tools in real-time.
 
-![Agentify Network Visualization](https://via.placeholder.com/800x400.png?text=Agentify+Network+Visualization)
+![Agentify Network Visualization](https://i.postimg.cc/MGQHMdkL/image-2024-08-25-121255279.png)
 
 ## Contributing 🤝
 
