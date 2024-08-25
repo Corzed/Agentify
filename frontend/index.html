@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Agent Orchestrator Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css">
+    <link rel="stylesheet" href="frontend/styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <h1><i class="fas fa-robot"></i> Enhanced Agent Orchestrator Dashboard</h1>
+    </header>
+
+    <aside class="sidebar">
+        <div class="card agent-creator">
+            <h2><i class="fas fa-plus-circle"></i> Create New Agent</h2>
+            <input type="text" id="agent-name" placeholder="Agent Name">
+            <textarea id="agent-description" placeholder="Agent Description" rows="4"></textarea>
+            <button id="create-agent"><i class="fas fa-plus"></i> Create Agent</button>
+        </div>
+        <div class="agent-list">
+            <h2><i class="fas fa-users"></i> Active Agents</h2>
+            <div id="active-agents"></div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <div id="agent-network"></div>
+        <div class="communication-log">
+            <h2><i class="fas fa-exchange-alt"></i> Communication Log</h2>
+            <div class="comm-messages" id="comm-messages"></div>
+        </div>
+    </main>
+
+    <button id="chat-toggle">Open Chat</button>
+
+    <div class="chat-overlay" id="chat-overlay"></div>
+    <div class="chat-popup" id="chat-popup">
+        <div class="chat-header">
+            <h2>Chat with AI</h2>
+            <button id="close-chat">Close</button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages will be inserted here -->
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js"></script>
+    <script src="frontend/scripts/main.js"></script>
+    <script src="frontend/scripts/network.js"></script>
+    <script src="frontend/scripts/chat.js"></script>
+</body>
+</html>

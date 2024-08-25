@@ -1,0 +1,6 @@
+flask
+flask-socketio
+flask-cors
+openai
+python-dotenv
+markdown
