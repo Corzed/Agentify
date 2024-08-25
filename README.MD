@@ -7,7 +7,7 @@ Agentify is an intelligent orchestration platform designed to manage and coordin
 - [Features](#features-)
 - [Installation](#installation-)
 - [Backend Structure](#backend-structure-)
-- [Agent & Tool Format](#agent--tool-format-)
+- [Agent & Tool Format](#agent--tool-format-%EF%B8%8F)
 - [Configuration](#configuration-)
 - [Usage](#usage-)
 - [Contributing](#contributing-)
