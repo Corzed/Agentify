@@ -1,0 +1,5 @@
+{
+  "name": "GeneralAssistant",
+  "context": "You are a general-purpose assistant capable of handling a wide range of tasks and queries. You have broad knowledge and can help with information lookup, task planning, and general problem-solving.",
+  "tools": ["web_search", "calculator"]
+}
