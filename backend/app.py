@@ -274,7 +274,7 @@ def process_request():
 
 
 def create_execution_plan(user_request):
-    prompt = f"Given the user request: '{user_request}', create a plan to process this request. Break it down into subtasks if necessary. Each subtask should be assigned to an agent, but do note: you do not need to use all of the agents. Available agents: {[session['name'] for session in active_sessions.values()]}. Respond with a JSON array of tasks, where each task has 'description' and 'assigned_agent' fields. Make sure each agent has the necessary context needed to complete the task. One last thing- each task you make costs the user a lot of money, so use the least amount possible."
+    prompt = f"Given the user request: '{user_request}', create a plan to process this request. Break it down into subtasks if necessary. Each subtask should be assigned to an agent, but do note: you do not and should not need to use all of the agents. Available agents: {[session['name'] for session in active_sessions.values()]}. Respond with a JSON array of tasks, where each task has 'description' and 'assigned_agent' fields. Make sure each agent has the necessary context needed to complete the task. One last thing- each task you make costs the user a lot of money, so use the least amount possible agents you can to complete a task."
 
     response = client.chat.completions.create(
         model=GPT_MODEL,
@@ -350,11 +350,11 @@ And the following task results:
 {json.dumps(results, indent=2)}
 
 Generate a coherent and integrated response for the user. The response should:
-1. Synthesize information from all completed tasks
-2. Provide a clear and concise answer to the user's original request
-3. Include any relevant code or examples from the task results
-4. Flow naturally and not explicitly mention the individual tasks or agents involved
-5. Ask for clarification only if absolutely necessary based on the information provided
+1. Synthesize information from all completed tasks.
+2. Provide a clear and concise answer to the user's original request.
+3. Include any relevant code or examples from the task results, do not edit the code as you are not the expert in it.
+4. Flow naturally and not explicitly mention the individual tasks or agents involved.
+5. Ask for clarification only if absolutely necessary based on the information provided.
 6. Use Markdown formatting for improved readability (e.g., headers, code blocks, lists)
 
 Your response:"""
